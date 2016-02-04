@@ -18,22 +18,30 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aYV-3p-78A">
-                                <rect key="frame" x="264" y="263" width="73" height="73"/>
+                                <rect key="frame" x="235" y="228" width="130" height="144"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="73" id="4YL-zW-f52"/>
+                                    <constraint firstAttribute="width" constant="130" id="1T0-df-BnS"/>
                                 </constraints>
                                 <state key="normal" title="Record"/>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Record" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QdY-vo-T6x">
+                                <rect key="frame" x="235" y="344" width="130" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="aYV-3p-78A" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2rb-Gg-kly"/>
-                            <constraint firstItem="aYV-3p-78A" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="CmK-La-j7P"/>
-                            <constraint firstItem="aYV-3p-78A" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="243" id="JKi-f3-DRU"/>
+                            <constraint firstItem="aYV-3p-78A" firstAttribute="trailing" secondItem="QdY-vo-T6x" secondAttribute="trailing" id="146-8Y-T6k"/>
+                            <constraint firstItem="aYV-3p-78A" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DgZ-V4-bSt"/>
+                            <constraint firstItem="aYV-3p-78A" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="208" id="Osw-18-fqM"/>
+                            <constraint firstItem="aYV-3p-78A" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="aPn-3Y-BkL"/>
+                            <constraint firstItem="aYV-3p-78A" firstAttribute="leading" secondItem="QdY-vo-T6x" secondAttribute="leading" id="hhS-Aa-hg6"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="recordButton" destination="CmK-La-j7P" id="31W-2g-htZ"/>
+                        <outlet property="statusLabel" destination="QdY-vo-T6x" id="2w7-Q2-nkk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -6,11 +6,15 @@
 //  Copyright © 2016 Nathaniel PiSierra. All rights reserved.
 //
 
-import UIKit
 
-class recordViewController: UIViewController {
+import UIKit
+import AVFoundation
+
+class recordViewController: UIViewController, AVAudioRecorderDelegate {
 
     @IBOutlet weak var recordButton: NSLayoutConstraint!
+    @IBOutlet weak var statusLabel: UILabel!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
