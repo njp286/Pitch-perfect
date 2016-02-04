@@ -10,9 +10,11 @@ import UIKit
 
 class recordViewController: UIViewController {
 
+    @IBOutlet weak var recordButton: NSLayoutConstraint!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+       
         // Do any additional setup after loading the view.
     }
 
