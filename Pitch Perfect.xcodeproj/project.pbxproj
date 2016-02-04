@@ -14,6 +14,7 @@
 		7D3D5E301C63D43E007618AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D3D5E2E1C63D43E007618AD /* LaunchScreen.storyboard */; };
 		7D3D5E3B1C63D43E007618AD /* Pitch_PerfectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3D5E3A1C63D43E007618AD /* Pitch_PerfectTests.swift */; };
 		7D3D5E461C63D43E007618AD /* Pitch_PerfectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3D5E451C63D43E007618AD /* Pitch_PerfectUITests.swift */; };
+		7D3D5E561C63D6A4007618AD /* recordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3D5E551C63D6A4007618AD /* recordViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		7D3D5E411C63D43E007618AD /* Pitch PerfectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pitch PerfectUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D3D5E451C63D43E007618AD /* Pitch_PerfectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pitch_PerfectUITests.swift; sourceTree = "<group>"; };
 		7D3D5E471C63D43E007618AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D3D5E551C63D6A4007618AD /* recordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = recordViewController.swift; path = ../recordViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				7D3D5E251C63D43E007618AD /* AppDelegate.swift */,
+				7D3D5E551C63D6A4007618AD /* recordViewController.swift */,
 				7D3D5E271C63D43E007618AD /* ViewController.swift */,
 				7D3D5E291C63D43E007618AD /* Main.storyboard */,
 				7D3D5E2C1C63D43E007618AD /* Assets.xcassets */,
@@ -261,6 +264,7 @@
 			files = (
 				7D3D5E281C63D43E007618AD /* ViewController.swift in Sources */,
 				7D3D5E261C63D43E007618AD /* AppDelegate.swift in Sources */,
+				7D3D5E561C63D6A4007618AD /* recordViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
