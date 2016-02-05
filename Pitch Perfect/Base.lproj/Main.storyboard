@@ -17,30 +17,51 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aYV-3p-78A">
-                                <rect key="frame" x="235" y="228" width="130" height="144"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="130" id="1T0-df-BnS"/>
-                                </constraints>
-                                <state key="normal" title="Record"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aYV-3p-78A">
+                                <rect key="frame" x="250" y="250" width="100" height="100"/>
+                                <state key="normal" image="record">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="recordPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fd9-S1-eou"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Record" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QdY-vo-T6x">
-                                <rect key="frame" x="235" y="344" width="130" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Record" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QdY-vo-T6x">
+                                <rect key="frame" x="235" y="358" width="130" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yIJ-Pe-GV4">
+                                <rect key="frame" x="235" y="235" width="130" height="144"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="f6p-cU-ra5"/>
+                                </constraints>
+                                <state key="normal" title="End Recording">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="endRecordPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L2h-tA-ZNq"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.23699774979999999" green="0.52403868389999997" blue="0.80496018759999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="aYV-3p-78A" firstAttribute="trailing" secondItem="QdY-vo-T6x" secondAttribute="trailing" id="146-8Y-T6k"/>
-                            <constraint firstItem="aYV-3p-78A" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DgZ-V4-bSt"/>
-                            <constraint firstItem="aYV-3p-78A" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="208" id="Osw-18-fqM"/>
-                            <constraint firstItem="aYV-3p-78A" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="aPn-3Y-BkL"/>
-                            <constraint firstItem="aYV-3p-78A" firstAttribute="leading" secondItem="QdY-vo-T6x" secondAttribute="leading" id="hhS-Aa-hg6"/>
+                            <constraint firstItem="yIJ-Pe-GV4" firstAttribute="leading" secondItem="QdY-vo-T6x" secondAttribute="leading" id="3JG-37-pe3"/>
+                            <constraint firstItem="aYV-3p-78A" firstAttribute="centerX" secondItem="QdY-vo-T6x" secondAttribute="centerX" id="Mmo-9P-KCB"/>
+                            <constraint firstItem="aYV-3p-78A" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="230" id="YJd-CK-rRG"/>
+                            <constraint firstItem="QdY-vo-T6x" firstAttribute="top" secondItem="aYV-3p-78A" secondAttribute="bottom" constant="8" symbolic="YES" id="eDk-yF-OBe"/>
+                            <constraint firstItem="aYV-3p-78A" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="evX-LN-619"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="QdY-vo-T6x" secondAttribute="bottom" constant="221" id="jbf-5n-7tj"/>
+                            <constraint firstItem="yIJ-Pe-GV4" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="215" id="tD7-Kt-9GR"/>
+                            <constraint firstItem="aYV-3p-78A" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="tW2-DB-UcD"/>
+                            <constraint firstItem="yIJ-Pe-GV4" firstAttribute="trailing" secondItem="QdY-vo-T6x" secondAttribute="trailing" id="wR7-dG-ZLg"/>
+                            <constraint firstItem="yIJ-Pe-GV4" firstAttribute="bottom" secondItem="QdY-vo-T6x" secondAttribute="bottom" id="x8U-Fv-riM"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="endRecordButton" destination="yIJ-Pe-GV4" id="H1B-pz-6RQ"/>
+                        <outlet property="recordButton" destination="aYV-3p-78A" id="pRe-oY-gk0"/>
                         <outlet property="statusLabel" destination="QdY-vo-T6x" id="2w7-Q2-nkk"/>
                     </connections>
                 </viewController>
@@ -48,10 +69,10 @@
             </objects>
             <point key="canvasLocation" x="380" y="337"/>
         </scene>
-        <!--View Controller-->
+        <!--Play Sound View Controller-->
         <scene sceneID="yhf-Y9-HbQ">
             <objects>
-                <viewController id="ZVJ-7m-gam" sceneMemberID="viewController">
+                <viewController id="ZVJ-7m-gam" customClass="playSoundViewController" customModule="Pitch_Perfect" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2ay-kv-Go5"/>
                         <viewControllerLayoutGuide type="bottom" id="Fqf-XH-rMp"/>
@@ -62,10 +83,18 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="onf-5a-GLR">
                                 <rect key="frame" x="20" y="20" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Back"/>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" id="iVR-HA-OEn"/>
                                 </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uOE-Q2-OAX">
+                                <rect key="frame" x="128" y="258" width="83" height="83"/>
+                                <state key="normal" title="Chipmunk"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fjk-C7-mcB">
+                                <rect key="frame" x="377" y="258" width="83" height="83"/>
+                                <state key="normal" title="Darth Vader"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -76,4 +105,7 @@
             <point key="canvasLocation" x="1122" y="337"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="record" width="100" height="100"/>
+    </resources>
 </document>
