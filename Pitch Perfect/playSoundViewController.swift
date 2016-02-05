@@ -6,12 +6,19 @@
 //  Copyright © 2016 Nathaniel PiSierra. All rights reserved.
 //
 
+import AVFoundation
 import UIKit
 
 class playSoundViewController: UIViewController {
 
+    var audioPlayer: AVAudioPlayer!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        let path = NSBundle.mainBundle().pathForResource("movie_quote", ofType: "mp3")
+        let fileUrl = NSURL(fileURLWithPath: path!)
+        audioPlayer = try!
+        AVAudioPlayer(contentsOfURL: fileUrl)
 
         // Do any additional setup after loading the view.
     }
@@ -22,6 +29,10 @@ class playSoundViewController: UIViewController {
     }
     
 
+    @IBAction func snailButtonPressed(sender: UIButton) {
+        audioPlayer.play()
+        
+    }
     /*
     // MARK: - Navigation
 

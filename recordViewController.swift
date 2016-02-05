@@ -17,6 +17,11 @@ class recordViewController: UIViewController, AVAudioRecorderDelegate {
     @IBOutlet weak var recordButton: UIButton!
     @IBOutlet weak var endRecordButton: UIButton!
     
+    override func viewWillAppear(animated: Bool) {
+        endRecordButton.hidden = true;
+        statusLabel.text = "Record";
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -33,13 +38,12 @@ class recordViewController: UIViewController, AVAudioRecorderDelegate {
     }
     
     @IBAction func recordPressed(sender: UIButton) {
-        recordButton.hidden = true;
         endRecordButton.hidden = false;
         statusLabel.text = "Recording...";
     }
 
     @IBAction func endRecordPressed(sender: UIButton) {
-        
+      
         
     }
 

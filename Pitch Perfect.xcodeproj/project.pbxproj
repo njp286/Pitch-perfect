@@ -16,6 +16,7 @@
 		7D3D5E461C63D43E007618AD /* Pitch_PerfectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3D5E451C63D43E007618AD /* Pitch_PerfectUITests.swift */; };
 		7D3D5E561C63D6A4007618AD /* recordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3D5E551C63D6A4007618AD /* recordViewController.swift */; };
 		7D5A2D3D1C65170D00159397 /* playSoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5A2D3C1C65170C00159397 /* playSoundViewController.swift */; };
+		7D5A2D3F1C654CB300159397 /* movie_quote.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7D5A2D3E1C654CB300159397 /* movie_quote.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		7D3D5E471C63D43E007618AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7D3D5E551C63D6A4007618AD /* recordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = recordViewController.swift; path = ../recordViewController.swift; sourceTree = "<group>"; };
 		7D5A2D3C1C65170C00159397 /* playSoundViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = playSoundViewController.swift; sourceTree = "<group>"; };
+		7D5A2D3E1C654CB300159397 /* movie_quote.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = movie_quote.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				7D3D5E2C1C63D43E007618AD /* Assets.xcassets */,
 				7D3D5E2E1C63D43E007618AD /* LaunchScreen.storyboard */,
 				7D3D5E311C63D43E007618AD /* Info.plist */,
+				7D5A2D3E1C654CB300159397 /* movie_quote.mp3 */,
 			);
 			path = "Pitch Perfect";
 			sourceTree = "<group>";
@@ -240,6 +243,7 @@
 			files = (
 				7D3D5E301C63D43E007618AD /* LaunchScreen.storyboard in Resources */,
 				7D3D5E2D1C63D43E007618AD /* Assets.xcassets in Resources */,
+				7D5A2D3F1C654CB300159397 /* movie_quote.mp3 in Resources */,
 				7D3D5E2B1C63D43E007618AD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
