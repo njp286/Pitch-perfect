@@ -44,7 +44,6 @@
                                 </state>
                                 <connections>
                                     <action selector="endRecordPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L2h-tA-ZNq"/>
-                                    <segue destination="i65-OR-KUB" kind="show" id="Wp0-zZ-HLW"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -63,6 +62,7 @@
                         <outlet property="endRecordButton" destination="yIJ-Pe-GV4" id="H1B-pz-6RQ"/>
                         <outlet property="recordButton" destination="aYV-3p-78A" id="pRe-oY-gk0"/>
                         <outlet property="statusLabel" destination="QdY-vo-T6x" id="2w7-Q2-nkk"/>
+                        <segue destination="i65-OR-KUB" kind="show" identifier="stopRecording" id="f1X-MW-7h4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -82,20 +82,64 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cMz-Pt-0rD">
-                                <rect key="frame" x="78" y="133" width="100" height="100"/>
+                                <rect key="frame" x="42" y="133" width="100" height="100"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="z77-Rf-RKF"/>
+                                    <constraint firstAttribute="width" constant="100" id="OnT-g4-p1q"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="snail"/>
                                 <connections>
                                     <action selector="snailButtonPressed:" destination="i65-OR-KUB" eventType="touchUpInside" id="5ww-K8-BXr"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aiP-dz-SIu">
+                                <rect key="frame" x="454" y="133" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="u0S-NH-8P2"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="fast"/>
+                                <connections>
+                                    <action selector="rabbitButtonPressed:" destination="i65-OR-KUB" eventType="touchUpInside" id="Ueb-Tf-gha"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ht3-Xl-cyg">
+                                <rect key="frame" x="275" y="481" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="mTZ-Vx-8DO"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="stop"/>
+                                <connections>
+                                    <action selector="stopPressed:" destination="i65-OR-KUB" eventType="touchUpInside" id="4YH-tn-zvt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9q1-Lj-f8q">
+                                <rect key="frame" x="42" y="338" width="100" height="100"/>
+                                <state key="normal" title="Button" image="chipmunk"/>
+                                <connections>
+                                    <action selector="chipmunkButtonPressed:" destination="i65-OR-KUB" eventType="touchUpInside" id="FSm-M7-ToA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Grf-2v-vhL">
+                                <rect key="frame" x="454" y="338" width="100" height="100"/>
+                                <state key="normal" title="Button" image="darthvader"/>
+                                <connections>
+                                    <action selector="darthVaderButtonPressed:" destination="i65-OR-KUB" eventType="touchUpInside" id="1M7-Cm-B3V"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="cMz-Pt-0rD" firstAttribute="top" secondItem="tIa-qy-v62" secondAttribute="bottom" constant="69" id="bH4-0X-Rtn"/>
-                            <constraint firstItem="cMz-Pt-0rD" firstAttribute="leading" secondItem="ja9-JB-2Sh" secondAttribute="leadingMargin" constant="58" id="htD-Fg-DRM"/>
+                            <constraint firstItem="9q1-Lj-f8q" firstAttribute="trailing" secondItem="cMz-Pt-0rD" secondAttribute="trailing" id="48I-as-bb5"/>
+                            <constraint firstItem="aiP-dz-SIu" firstAttribute="top" secondItem="tIa-qy-v62" secondAttribute="bottom" constant="69" id="6xk-QY-RZm"/>
+                            <constraint firstItem="Grf-2v-vhL" firstAttribute="baseline" secondItem="9q1-Lj-f8q" secondAttribute="baseline" id="KRa-8p-eHb"/>
+                            <constraint firstItem="Grf-2v-vhL" firstAttribute="trailing" secondItem="aiP-dz-SIu" secondAttribute="trailing" id="OJ5-9t-sli"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="aiP-dz-SIu" secondAttribute="trailing" constant="26" id="OtO-eW-1Z5"/>
+                            <constraint firstItem="cMz-Pt-0rD" firstAttribute="top" secondItem="tIa-qy-v62" secondAttribute="bottom" constant="69" id="PT1-qZ-cyL"/>
+                            <constraint firstItem="vQ2-Ug-4MR" firstAttribute="top" secondItem="Ht3-Xl-cyg" secondAttribute="bottom" constant="69" id="Umj-hZ-qta"/>
+                            <constraint firstItem="Ht3-Xl-cyg" firstAttribute="centerX" secondItem="ja9-JB-2Sh" secondAttribute="centerX" id="YRs-al-G96"/>
+                            <constraint firstItem="cMz-Pt-0rD" firstAttribute="leading" secondItem="ja9-JB-2Sh" secondAttribute="leadingMargin" constant="22" id="Zlb-tO-tWa"/>
+                            <constraint firstItem="9q1-Lj-f8q" firstAttribute="leading" secondItem="cMz-Pt-0rD" secondAttribute="leading" id="dGe-YN-eFE"/>
+                            <constraint firstItem="Grf-2v-vhL" firstAttribute="leading" secondItem="aiP-dz-SIu" secondAttribute="leading" id="n8l-HS-Y01"/>
+                            <constraint firstItem="vQ2-Ug-4MR" firstAttribute="top" secondItem="9q1-Lj-f8q" secondAttribute="bottom" constant="162" id="pLZ-Hp-Mos"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -123,6 +167,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="chipmunk" width="100" height="100"/>
+        <image name="darthvader" width="100" height="100"/>
+        <image name="fast" width="100" height="100"/>
         <image name="record" width="100" height="100"/>
         <image name="snail" width="100" height="100"/>
         <image name="stop" width="50" height="50"/>

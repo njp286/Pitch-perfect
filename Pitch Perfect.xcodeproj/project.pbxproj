@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D17ED591C67C06F00BB220D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D17ED571C67C06F00BB220D /* Main.storyboard */; };
+		7D17ED5B1C67C33D00BB220D /* RecordedAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D17ED5A1C67C33D00BB220D /* RecordedAudio.swift */; };
 		7D3D5E261C63D43E007618AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3D5E251C63D43E007618AD /* AppDelegate.swift */; };
 		7D3D5E281C63D43E007618AD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3D5E271C63D43E007618AD /* ViewController.swift */; };
-		7D3D5E2B1C63D43E007618AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D3D5E291C63D43E007618AD /* Main.storyboard */; };
 		7D3D5E2D1C63D43E007618AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D3D5E2C1C63D43E007618AD /* Assets.xcassets */; };
 		7D3D5E301C63D43E007618AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D3D5E2E1C63D43E007618AD /* LaunchScreen.storyboard */; };
 		7D3D5E3B1C63D43E007618AD /* Pitch_PerfectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3D5E3A1C63D43E007618AD /* Pitch_PerfectTests.swift */; };
@@ -37,10 +38,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7D17ED581C67C06F00BB220D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7D17ED5A1C67C33D00BB220D /* RecordedAudio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordedAudio.swift; sourceTree = "<group>"; };
 		7D3D5E221C63D43E007618AD /* Pitch Perfect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pitch Perfect.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D3D5E251C63D43E007618AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7D3D5E271C63D43E007618AD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7D3D5E2A1C63D43E007618AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7D3D5E2C1C63D43E007618AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7D3D5E2F1C63D43E007618AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7D3D5E311C63D43E007618AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -105,9 +107,10 @@
 			children = (
 				7D3D5E251C63D43E007618AD /* AppDelegate.swift */,
 				7D3D5E551C63D6A4007618AD /* recordViewController.swift */,
+				7D17ED5A1C67C33D00BB220D /* RecordedAudio.swift */,
 				7D3D5E271C63D43E007618AD /* ViewController.swift */,
 				7D5A2D3C1C65170C00159397 /* playSoundViewController.swift */,
-				7D3D5E291C63D43E007618AD /* Main.storyboard */,
+				7D17ED571C67C06F00BB220D /* Main.storyboard */,
 				7D3D5E2C1C63D43E007618AD /* Assets.xcassets */,
 				7D3D5E2E1C63D43E007618AD /* LaunchScreen.storyboard */,
 				7D3D5E311C63D43E007618AD /* Info.plist */,
@@ -244,7 +247,7 @@
 				7D3D5E301C63D43E007618AD /* LaunchScreen.storyboard in Resources */,
 				7D3D5E2D1C63D43E007618AD /* Assets.xcassets in Resources */,
 				7D5A2D3F1C654CB300159397 /* movie_quote.mp3 in Resources */,
-				7D3D5E2B1C63D43E007618AD /* Main.storyboard in Resources */,
+				7D17ED591C67C06F00BB220D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +276,7 @@
 				7D3D5E261C63D43E007618AD /* AppDelegate.swift in Sources */,
 				7D5A2D3D1C65170D00159397 /* playSoundViewController.swift in Sources */,
 				7D3D5E561C63D6A4007618AD /* recordViewController.swift in Sources */,
+				7D17ED5B1C67C33D00BB220D /* RecordedAudio.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,10 +312,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		7D3D5E291C63D43E007618AD /* Main.storyboard */ = {
+		7D17ED571C67C06F00BB220D /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				7D3D5E2A1C63D43E007618AD /* Base */,
+				7D17ED581C67C06F00BB220D /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
